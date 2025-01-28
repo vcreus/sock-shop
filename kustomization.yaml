@@ -27,3 +27,10 @@ resources:
 - base/user-db-svc.yaml
 - base/user-dep.yaml
 - base/user-svc.yaml
+
+commonAnnotations:
+  instrumentation.opentelemetry.io/inject-nodejs: "opentelemetry-operator-system/elastic-instrumentation"
+  instrumentation.opentelemetry.io/inject-java: "opentelemetry-operator-system/elastic-instrumentation"
+  instrumentation.opentelemetry.io/inject-python: "opentelemetry-operator-system/elastic-instrumentation"
+  instrumentation.opentelemetry.io/inject-dotnet: "opentelemetry-operator-system/elastic-instrumentation"
+  instrumentation.opentelemetry.io/inject-go: "opentelemetry-operator-system/elastic-instrumentation"
